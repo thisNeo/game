@@ -1,0 +1,48 @@
+.game {
+  min-width: 600px; 
+  flex-grow: 1;
+  &_container {
+    height: 100%;
+  }
+  .options {
+    width: 550px;
+    height: 50px;
+    margin: auto;
+    padding-top: 1%;
+    &_option {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    &_message {
+      color: #878787;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .field {
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &_container {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &_item {
+      background: white;
+      border: 1px #e5e5e8 solid;
+      &.blue {
+        background: #00dbe9;
+      }
+      &.green {
+        background: #00fd6a;
+      }
+      &.red {
+        background: #f33f5b;
+      }
+    }
+  }
+}
